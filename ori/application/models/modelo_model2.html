@@ -1,0 +1,42 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+* 
+*/
+class Modelo_model extends CI_Model
+{
+	
+	function __construct()
+	{
+			parent::__construct();
+			$this->load->database();
+	}
+	function postulacion2($data)
+	{
+		$this->db->insert('Destino',array('INSTITUCIOND'=>$data['b_instituciondestino'],'PAISD'=>$data['b_paisdestino'],	
+			'CIUDADD' =>$data['b_ciudaddestino'],
+			'DESCRIPCION'=>$data['b_descripcion']));
+		
+		$this->db->insert('Alumno',array('NOMBRE'=>$data['b_nombre'],
+			'APELLIDOP'=>$data['b_apellido'],	
+			'APELLIDOM' =>$data['b_apellido2'],
+			'RUT' =>$data['b_rut'],
+			'CORREO' =>$data['b_correo'],
+			'ESTADOC' =>$data['b_estadocivil'],
+			'DIRECCION' =>$data['b_direccion'],
+			'TELEFONO1' =>$data['b_telefonofijo'],
+			'TELEFONO2' =>$data['b_telefonofijo2'],
+			'CELULAR' =>$data['b_celular']));
+
+		$this->db->insert('Antecedentes',array('CARRERA'=>$data['b_carrera'],
+			'NIVEL'=>$data['b_nivel'],	
+			'NIVELS' =>$data['b_nivelalsalir'],
+			'FACULTAD'=>$data['b_facultad']));
+		
+		$this->db->insert('Financiamiento',array('PASAJES'=>$data['b_montopasajes'],'ALIMENTACION'=>$data['b_montoalimentacion'],	
+			'ALOJAMIENTO' =>$data['b_montoalojamiento'],
+			'OTROS'=>$data['b_montootros']));
+	}
+}
+
+?>

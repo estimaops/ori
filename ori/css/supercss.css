@@ -1,0 +1,78 @@
+
+/*Diseño creado por Raúl Barrera, experto en diseño web*/
+
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/*  formulario  */
+.myform{
+margin:30px auto ;
+width:400px;
+padding:14px;
+}
+
+.myform2{
+margin:30px  ;
+width:400px;
+padding:14px;
+}
+
+
+
+/*  estilos generales */
+#estilizado{
+border:solid 2px #999999;
+border-radius: 15px 0px 15px 0px;
+box-shadow: 2px 2px 5px #999999;
+background:#DAE6B1;
+}
+#estilizado h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#estilizado p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #999999;
+padding-bottom:10px;
+}
+#estilizado label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#estilizado .small{
+color:#999999;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#estilizado input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #777777;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#estilizado button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+}
