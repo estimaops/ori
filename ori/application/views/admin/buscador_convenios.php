@@ -1,6 +1,7 @@
 
 <body>
     <?php
+echo ”prueba”;
     $contador=0;
     foreach($convenios -> result() as $convenio){
         echo "
